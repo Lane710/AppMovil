@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Container for Header -->
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00FFFF"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Botón "Usuarios" en la esquina superior izquierda -->
+        <Button
+            android:id="@+id/btnUsuarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anadir"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="1dp"
+            android:onClick="usuarios"/>
+
+        <!-- Header TextView -->
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="Tecnomanto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </LinearLayout>
+
+    <!-- Encabezado para Cocinas -->
+    <TextView
+        android:id="@+id/txtCocinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cocinas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"/>
+
+    <!-- RecyclerView 1 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txtCocinas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Encabezado para Electrodomésticos Pequeños -->
+    <TextView
+        android:id="@+id/txtElectrodomesticos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electrodomésticos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toBottomOf="@id/recycler1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"/>
+
+    <!-- RecyclerView 2 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txtElectrodomesticos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Encabezado para Televisiones y Audio -->
+    <TextView
+        android:id="@+id/txtTelevisiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Televisores"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toBottomOf="@id/recycler2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"/>
+
+    <!-- RecyclerView 3 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler3"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTelevisiones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Container for Footer -->
+    <LinearLayout
+        android:id="@+id/footerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00FFFF"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Footer TextView (optional) -->
+        <TextView
+            android:id="@+id/txtFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Footer text here" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

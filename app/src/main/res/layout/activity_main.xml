@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondodesendiente"
+        android:alpha="0.9" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#00FFFFFF"
+        android:gravity="center|center_horizontal"
+        android:hapticFeedbackEnabled="false"
+        android:text="Electrotec"
+        android:textColor="@color/white"
+        android:textSize="70dp"
+        android:translationY="150dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/inicio"
+        android:layout_width="298dp"
+        android:layout_height="81dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#00FFE0"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:onClick="siguienteInicio"
+        android:text="LOGIN"
+        android:textSize="40dp" />
+
+
+</FrameLayout>

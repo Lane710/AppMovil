@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Botón para añadir usuario -->
+    <Button
+        android:id="@+id/btnAnadirUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir usuario"
+        android:layout_marginBottom="8dp"
+        android:onClick="anadirUsuarios"/>
+
+
+
+    <!-- Botón para añadir producto -->
+    <Button
+        android:id="@+id/btnAnadirProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir producto"
+        android:onClick="AddProducto"/>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Modificar Nuevo Usuario"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/correo_Electronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/Celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Celular"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/Direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/Contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/rep_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repita la contraseña"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/tipousuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccione el tipo de usuario"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/Noeliminar"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#FF0000"
+                android:contextClickable="false"
+                android:cursorVisible="false"
+                android:text="Cancelar"
+                android:textSize="20sp"
+                android:layout_marginEnd="16dp"
+                android:onClick="eliminar"/>
+
+            <Button
+                android:id="@+id/eliminar"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00FFE0"
+                android:contextClickable="false"
+                android:cursorVisible="false"
+                android:text="Eliminar"
+                android:textSize="20sp"
+                android:onClick="guardar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
